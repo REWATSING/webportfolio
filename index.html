@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h1>John Doe</h1>
+            <p>Welcome to my portfolio</p>
+            <button class="scroll-button" onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dapibus leo. Cras ac odio nec arcu pharetra vestibulum.</p>
+            
+            <!-- Download Resume Button -->
+            <a href="resume.pdf" download class="download-btn">Download Resume</a>
+
+            <!-- Self Introduction Video Frame -->
+            <div class="video-frame">
+                <h3>Self Introduction</h3>
+                <video width="100%" height="auto" controls poster="video-placeholder.jpg">
+                    <source src="self-intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="container">
+            <h2>My Work</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper nunc vitae metus volutpat, ac volutpat ligula egestas.</p>
+            <div class="work-grid">
+                <div class="work-item">
+                    <h3>Project 1</h3>
+                    <p>Description of project 1.</p>
+                </div>
+                <div class="work-item">
+                    <h3>Project 2</h3>
+                    <p>Description of project 2.</p>
+                </div>
+                <div class="work-item">
+                    <h3>Project 3</h3>
+                    <p>Description of project 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 John Doe. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

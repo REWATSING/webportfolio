@@ -1,0 +1,150 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #f5f5dc; /* Cream color */
+    color: #000080; /* Blue color */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000080;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #f5f5dc;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#home {
+    background-color: #f5f5dc; /* Cream color */
+}
+
+#about, #work {
+    background-color: #000080; /* Blue color */
+    color: #f5f5dc;
+}
+
+/* Download Resume Button */
+.download-btn {
+    background-color: #000080;
+    color: #f5f5dc;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: 2px solid #f5f5dc;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #f5deb3; /* Light cream for hover effect */
+    color: #000080;
+    border-color: #000080;
+}
+
+/* Video Frame */
+.video-frame {
+    margin-top: 40px;
+}
+
+.video-frame h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+video {
+    border: 4px solid #f5f5dc;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* Work Section */
+#work .work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.work-item {
+    background-color: #f5f5dc;
+    color: #000080;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+button.scroll-button {
+    background-color: #000080;
+    color: #f5f5dc;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.scroll-button:hover {
+    background-color: #f5deb3; /* Light cream for hover effect */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000080;
+    color: #f5f5dc;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #work .work-grid {
+        grid-template-columns: 1fr;
+    }
+}
