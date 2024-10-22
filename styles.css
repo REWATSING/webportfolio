@@ -55,11 +55,13 @@ section {
     text-align: center;
 }
 
-#home {
-    background-image: url(/images/bg.JPEG); /* Adjust the path to your image */
+/* Home Section with Background */
+.home-section {
+    background-image: url('/images/bg.JPEG'); /* Adjust the path to your image */
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Parallax scrolling effect */
     background-color: #f5f5dc; /* Fallback color */
     color: #000080; /* Blue text */
     display: flex;
@@ -199,5 +201,9 @@ footer {
 
     #contact input, #contact textarea {
         max-width: 100%;
+    }
+
+    section {
+        padding: 80px 20px;
     }
 }
