@@ -57,7 +57,7 @@ section {
 
 /* Home Section with Background */
 .home-section {
-    background-image: url('/images/bg.JPEG'); /* Adjust the path to your image */
+    background-image: url('/images/bg.jpg'); /* Adjust the path to your image */
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -164,20 +164,6 @@ button.scroll-button:hover {
 
 #contact textarea {
     resize: vertical;
-}
-
-#contact button {
-    background-color: #000080;
-    color: #f5f5dc;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#contact button:hover {
-    background-color: #f5deb3;
-    color: #000080;
 }
 
 /* Footer Styles */
