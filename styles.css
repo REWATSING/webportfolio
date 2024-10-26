@@ -7,15 +7,15 @@
 
 body {
     font-family: 'Times New Roman', serif;
-    background-color: #f5f5dc; /* Cream color */
-    color: #000080; /* Blue color */
+    background-color: #f7f7f3; /* White type color */
+    color: #bfbff8; /* Blue color */
     line-height: 1.6;
 }
 
 header {
-    background-color: #000080;
+    background-color: #000046;
     padding: 10px 0;
-    text-align: center;
+    text-align: left;
     position: fixed;
     width: 100%;
     top: 0;
@@ -76,8 +76,8 @@ section {
 /* Home Section */
 .home-section {
     position: relative;
-    background-color: #f5f5dc; /* Fallback color */
-    color: #000080;
+    background-color: #f7f7f2; /* Fallback color */
+    color: #c4c4f5;
     display: flex;
     flex-direction: column;
     align-items: center;
