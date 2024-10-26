@@ -52,8 +52,20 @@ section {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 }
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    z-index: 0;
+}
+
 /* Reset */
 * {
     margin: 0;
@@ -75,17 +87,6 @@ section {
     text-align: center;
     overflow: hidden;
     
-}
-
-.background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.5);
-    z-index: 0;
 }
 
 h1 {
