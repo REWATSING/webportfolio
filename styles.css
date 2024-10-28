@@ -22,6 +22,13 @@ header {
     z-index: 1000;
 }
 
+/* Logo Styling */
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+/* Header text h1 Styling */
 .headertext {
     text-align: left;
     color: #333333;
@@ -32,6 +39,8 @@ header {
 header nav ul {
     list-style-type: disc;
     text-align: right;
+    display: flex;
+    gap: 30px;
 }
 
 header nav ul li {
