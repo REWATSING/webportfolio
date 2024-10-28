@@ -6,44 +6,61 @@
 }
 
 body {
-    font-family: 'Times New Roman', serif;
-    background-color: #F5F5F5; /* Cream color */
-    color: #333333; /* Blue color */
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;  /* Light cream color */
+    color: #333333;
     line-height: 1.6;
 }
 
+
+/* Header Styles */
 header {
     background-color: #A8E6CF;
-    padding: 10px 0;
-    text-align: start;
+    padding: 15px 25px;
+    max-width: 1000px;           /* Set max-width to align with body content */
+    margin: 10px auto;           /* Center header horizontally */
+    border-radius: 15px;         /* Rounded corners for smooth edges */
     position: fixed;
-    width: 100%;
+    left: 0;
+    right: 0;
     top: 0;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* Subtle shadow for depth */
 }
 
 
+/* Navigation Styles */
 header nav ul {
-    list-style-type: disc;
-    text-align: right;
+    list-style-type: none;
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 header nav ul li {
-    display: inline;
-    margin-right: 30px;
+    margin: 0;
 }
 
 header nav ul li a {
     color: #333333;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    text-decoration: none;
+    color: #00796B;  /* Darker green on hover for visual feedback */
 }
+
+
+/* Body Padding to Prevent Overlap with Fixed Header */
+body {
+    padding-top: 80px;  /* Space for the fixed header */
+}
+
 
 /* Section Styles */
 section {
@@ -73,6 +90,7 @@ section {
     background-color: #4169e1;
 }
 
+
 /* Responsive */
 @media (max-width: 768px) {
     h1 {
@@ -87,6 +105,7 @@ section {
     background-color: #F5F5F5; /* Blue color */
     color: #333333;
 }
+
 
 /* Download Resume Button */
 .download-btn {
@@ -108,6 +127,7 @@ section {
     border-color: #000080;
 }
 
+
 /* Video Frame */
 .video-frame {
     margin-top: 40px;
@@ -124,6 +144,7 @@ video {
     max-width: 100%;
 }
 
+
 /* Work Section */
 #work .work-grid {
     display: grid;
@@ -138,6 +159,7 @@ video {
     padding: 20px;
     border-radius: 5px;
 }
+
 
 /* Button Styling */
 button.scroll-button {
@@ -159,11 +181,12 @@ button.scroll-button:hover {
     border-color: #000080;
 }
 
+
 /* Contact Section */
 #contact form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center
     gap: 15px;
     margin-top: 20px;
 }
@@ -183,13 +206,26 @@ button.scroll-button:hover {
     resize: vertical;
 }
 
+
 /* Footer Styles */
 footer {
     background-color: #A8E6CF;
     color: #555555;
     text-align: center;
-    padding: 20px;
+    padding: 15px 25px;
+    max-width: 1000px;          /* Match max-width with header */
+    margin: 20px auto;          /* Center footer horizontally and add spacing */
+    border-radius: 15px;        /* Rounded corners for consistency */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);  /* Subtle shadow for depth */
 }
+
+footer p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;                 /* Remove default margin */
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
