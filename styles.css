@@ -23,33 +23,6 @@ header {
 }
 
 
-
-/* Logo Styling */
-.logo h1 {
-    font-size: 2em;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    margin: 0;
-  }
-  
-  .logo a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .logo a:hover {
-    color: #007bff; /* Link hover color */
-  }
-  
-  /* Optional: Add shadow for logo */
-  .logo h1 {
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-  }
-
-
-
 header nav ul {
     list-style-type: disc;
     text-align: right;
