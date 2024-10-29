@@ -101,11 +101,20 @@ section {
     }
 }
 
-#about, #work, #contact {
-    background-color: #F5F5F5; /* Blue color */
+#about {
+    background-color: #fff;/* White color */
     color: #333333;
 }
 
+#work {
+    background-color: #eceafa;/* blue color */
+    color: #333333;
+}
+
+#contact {
+    background-color: #d0caf7;/* blue color */
+    color: #333333;
+}
 
 /* Download Resume Button */
 .download-btn {
@@ -182,11 +191,11 @@ button.scroll-button:hover {
 }
 
 
-/* Contact Section */
+/* Contact Form Section */
 #contact form {
     display: flex;
     flex-direction: column;
-    align-items:center
+    align-items:center;
     gap: 15px;
     margin-top: 20px;
 }
@@ -207,6 +216,44 @@ button.scroll-button:hover {
 }
 
 
+
+/* Contact Panel styling */
+.contact-panel {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Contact Text styling */
+.welcome-paragraph, .contact-info {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.contact-heading {
+    font-size: 1.6em;
+    color: #333;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* Contact Links styling */
+a.email-link, a.calling-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.email-link:hover, a.calling-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
 /* Footer Styles */
 footer {
     background-color: #A8E6CF;
@@ -225,6 +272,11 @@ footer p {
     margin: 0;                 /* Remove default margin */
 }
 
+footer p a {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px;                 /* Remove default margin */
+}
 
 
 /* Responsive Design */
