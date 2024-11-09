@@ -59,6 +59,7 @@ header nav ul li a:hover {
 /* Body Padding to Prevent Overlap with Fixed Header */
 body {
     padding-top: 80px;  /* Space for the fixed header */
+    background-color: rgba(242, 234, 228, var(--bg-opacity));
 }
 
 
@@ -300,23 +301,8 @@ footer p a {
 }
 
 
-/* Define custom background color with variable opacity */
-:root {
-    --bg-opacity: 1; /* Default opacity */
-  }
-  
-  /* Apply the background color */
-  body {
-    background-color: rgba(242, 234, 228, var(--bg-opacity));
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
+
+
   /* Home Section Styling */
   #home {
     padding: 50px 20px;
