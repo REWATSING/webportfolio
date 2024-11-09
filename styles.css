@@ -298,3 +298,83 @@ footer p a {
         padding: 80px 20px;
     }
 }
+
+
+/* Define custom background color with variable opacity */
+:root {
+    --bg-opacity: 1; /* Default opacity */
+  }
+  
+  /* Apply the background color */
+  body {
+    background-color: rgba(242, 234, 228, var(--bg-opacity));
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Home Section Styling */
+  #home {
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #home .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Heading and Paragraph Styles */
+  #home h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #home p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling */
+  #home .scroll-button, #home .github-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1D4ED8; /* Blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  #home .scroll-button:hover, #home .github-button a:hover {
+    background-color: #155A9A; /* Darker blue on hover */
+  }
+  
+  /* Intro Section within Home */
+  #home .intro h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 20px 0 5px;
+  }
+  
+  #home .intro h1 {
+    font-size: 2em;
+    color: #1D4ED8; /* Blue color */
+    margin-bottom: 10px;
+  }
+  
+  #home .intro p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
