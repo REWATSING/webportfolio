@@ -36,11 +36,11 @@
     </header>
 
     <!-- Home Section -->
-    <section id="home" class="home-section">
+    <section id="home">
         <div class="container">
             <h1>Rewat Singh</h1>
             <p>Welcome to my portfolio</p>
-            <button class="scroll-button" aria-label="Learn more about me" onclick="scrollToSection('about')">Learn More</button>
+            <button class="button-style scroll-button" onclick="scrollToSection('about')">Learn More</button>
         </div>
     </section>
     
@@ -55,7 +55,7 @@
             <p>I hold a Bachelor’s degree in Electronics and Communication Engineering and am always seeking opportunities to tackle new challenges in DevOps and cloud engineering. For a downloadable resume, please click the link above.</p>
             
             <!-- Download Resume Button -->
-            <a href="resume.pdf" download class="download-btn">Download Resume</a>
+            <a href="resume.pdf" class="button-style">Download Resume</a>
 
             <!-- Self Introduction Video Frame -->
             <div class="video-frame">
@@ -68,33 +68,120 @@
         </div>
     </section>
 
-    <!-- Work Section -->
-    <section id="work">
-        <div class="container">
-            <h2>My Work</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper nunc vitae metus volutpat, ac volutpat ligula egestas.</p>
-            <div class="work-grid">
-                <div class="work-item">
-                    <h3>Project 1</h3>
-                    <p>Description of project 1.</p>
-                </div>
-                <div class="work-item">
-                    <h3>Project 2</h3>
-                    <p>Description of project 2.</p>
-                </div>
-                <div class="work-item">
-                    <h3>Project 3</h3>
-                    <p>Description of project 3.</p>
-                </div>
+<!-- Work Section -->
+
+<section id="work">
+    <div class="container">
+        <h2>My Projects</h2>
+        <p>Here are some of the key projects I've worked on in DevOps and Cloud Engineering.</p>
+        
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-item">
+                <img src="images/project1.jpg" alt="Automated CI/CD Pipeline with Docker and Jenkins">
+                <h3>Automated CI/CD Pipeline</h3>
+                <p>Designed a CI/CD pipeline using Jenkins and Docker to automate deployment processes.</p>
+                <ul>
+                    <li>Technologies: Jenkins, Docker, Kubernetes</li>
+                    <li>Role: DevOps Engineer</li>
+                </ul>
+                <a href="https://github.com/yourproject1" target="_blank" class="button-style">View Project</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-item">
+                <img src="images/project2.jpg" alt="Infrastructure as Code with Terraform and AWS">
+                <h3>Infrastructure as Code with Terraform</h3>
+                <p>Provisioned cloud resources on AWS using Terraform for infrastructure as code.</p>
+                <ul>
+                    <li>Technologies: Terraform, AWS</li>
+                    <li>Role: Cloud Engineer</li>
+                </ul>
+                <a href="https://github.com/yourproject2" target="_blank" class="button-style">View Project</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-item">
+                <img src="images/project3.jpg" alt="Kubernetes Cluster with Monitoring and Logging">
+                <h3>Kubernetes Monitoring & Logging</h3>
+                <p>Deployed a Kubernetes cluster with Prometheus and Grafana for monitoring and logging.</p>
+                <ul>
+                    <li>Technologies: Kubernetes, Prometheus, Grafana</li>
+                    <li>Role: SRE</li>
+                </ul>
+                <a href="https://github.com/yourproject3" target="_blank" class="button-style">View Project</a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-item">
+                <img src="images/project4.jpg" alt="Automated Configuration Management with Ansible">
+                <h3>Configuration Management with Ansible</h3>
+                <p>Automated server configuration with Ansible playbooks for scalable deployments.</p>
+                <ul>
+                    <li>Technologies: Ansible</li>
+                    <li>Role: DevOps Engineer</li>
+                </ul>
+                <a href="https://github.com/yourproject4" target="_blank" class="button-style">View Project</a>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-item">
+                <img src="images/project5.jpg" alt="GitOps Workflow with ArgoCD">
+                <h3>GitOps with ArgoCD</h3>
+                <p>Implemented GitOps to manage Kubernetes deployments with ArgoCD.</p>
+                <ul>
+                    <li>Technologies: ArgoCD, Kubernetes</li>
+                    <li>Role: DevOps Engineer</li>
+                </ul>
+                <a href="https://github.com/yourproject5" target="_blank" class="button-style">View Project</a>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-item">
+                <img src="images/project6.jpg" alt="Serverless Microservices with AWS Lambda">
+                <h3>Serverless Microservices</h3>
+                <p>Developed a microservices architecture using AWS Lambda and API Gateway.</p>
+                <ul>
+                    <li>Technologies: AWS Lambda, API Gateway</li>
+                    <li>Role: Cloud Engineer</li>
+                </ul>
+                <a href="https://github.com/yourproject6" target="_blank" class="button-style">View Project</a>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="project-item">
+                <img src="images/project7.jpg" alt="Application Monitoring and Incident Response">
+                <h3>Monitoring & Incident Response</h3>
+                <p>Set up monitoring and alerting for applications using Prometheus and PagerDuty.</p>
+                <ul>
+                    <li>Technologies: Prometheus, Grafana, PagerDuty</li>
+                    <li>Role: SRE</li>
+                </ul>
+                <a href="https://github.com/yourproject7" target="_blank" class="button-style">View Project</a>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="project-item">
+                <img src="images/project8.jpg" alt="Load Testing and Performance Optimization">
+                <h3>Load Testing & Optimization</h3>
+                <p>Conducted load testing and optimized application performance with JMeter.</p>
+                <ul>
+                    <li>Technologies: JMeter, Kubernetes</li>
+                    <li>Role: Performance Engineer</li>
+                </ul>
+                <a href="https://github.com/yourproject8" target="_blank" class="button-style">View Project</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact">
 
-        <div class="contact-panel {
-            ">    
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <!-- Contact Intro Panel -->
+        <div class="contact-panel">
             <!-- Welcome message paragraph -->
             <p class="welcome-paragraph">You Are Welcome</p>
             
@@ -113,26 +200,27 @@
                 <!-- Email information -->
                 Email: <a href="mailto:rewatsingh271@gmail.com" class="email-link">rewatsingh271@gmail.com</a><br><br>
         
-
                 <!-- Contact phone number with clickable link -->
-                Phone: <a href="tel:+91829067****" class="calling-link">+91 829067****</a>
+                Phone: <a href="tel:+91829067****" class="phone-link">+91 829067****</a>
             </p>
         </div>
         
-
-        <div class="container">
+        <!-- Contact Form Section -->
+        <div class="form-section">
             <h2>Contact Me</h2>
             <p>Feel free to reach out to me via email or social media platforms.</p>
             
             <!-- Contact Form -->
-            <form action="https://formspree.io/f/mldedglv" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="_replyto" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="scroll-button" aria-label="Send message">Send Message</button>
+            <form action="https://formspree.io/f/mldedglv" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required class="form-input">
+                <input type="email" name="_replyto" placeholder="Your Email" required class="form-input">
+                <textarea name="message" placeholder="Your Message" rows="5" required class="form-input"></textarea>
+                <button type="submit" class="button-style">Send Message</button>
             </form>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Footer Section -->
     <footer>
