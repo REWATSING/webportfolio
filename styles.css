@@ -17,6 +17,7 @@ body {
 .container, header, footer {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 15px; /* Adding padding for consistent horizontal spacing */
 }
 
 /* Header and Footer */
@@ -36,7 +37,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 25px;
 }
 
 footer {
@@ -55,6 +55,7 @@ header nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; /* Ensures wrap on smaller screens */
 }
 
 header nav a {
@@ -66,7 +67,7 @@ header nav a {
 }
 
 header nav ul li a:hover {
-    color: #0efd1a;  /* Darker green on hover for visual feedback */
+    color: #0efd1a;  /* Darker green on hover */
 }
 
 /* Sections */
@@ -85,35 +86,31 @@ section {
 
 /* Global Button Style */
 .button-style {
-    background-color: #FF8C94; /* Pinkish shade */
-    color: #333333; /* Darker text for better contrast */
-    padding: 12px 25px;
-    font-size: 16px;
+    background-color: #FF8C94;
+    color: #333333;
+    padding: 10px 21px;
+    font-size: 14px;
     border: 2px solid #ffffcc;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
     text-decoration: none;
 }
 
-/* Hover and Focus States */
 .button-style:hover, .button-style:focus {
-    background-color: #f4a9b0;  /* Slightly darker pink for hover */
-    color: #000080; /* Navy text on hover */
+    background-color: #f4a9b0;
+    color: #000080;
     border-color: #0efd1a;
-    transform: scale(1.05); /* Subtle scale on hover */
-    outline: none; /* Remove default focus outline */
+    transform: scale(1.05);
+    outline: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced hover effect */
 }
 
 .button-style:focus {
-    box-shadow: 0 0 0 3px rgba(255, 140, 148, 0.4); /* Focus shadow for accessibility */
+    box-shadow: 0 0 0 3px rgba(255, 140, 148, 0.4); /* Focus shadow */
 }
 
-/* Specific Application Classes */
-.scroll-button, .download-btn, .submit-button {
-    /* Add .button-style class to these elements directly in HTML for consistent styling */
-}
-
+/* Headings and Intro */
 #home .intro h1 {
     font-size: 5em;
     color: #1D4ED8;
@@ -133,7 +130,7 @@ section {
 }
 
 /* Buttons */
-button, .scroll-button, .download-btn {
+button, .scroll-button, .download-btn, .submit-button {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1em;
@@ -181,6 +178,7 @@ video {
     font-size: 2.5em;
     margin-bottom: 30px;
 }
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -208,67 +206,27 @@ video {
     margin: 10px 0;
 }
 
-.project-item p {
+.project-item p, .project-item ul {
     font-size: 1em;
     color: #666;
     margin-bottom: 15px;
-}
-
-.project-item ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0;
-    font-size: 0.9em;
-    color: #555;
 }
 
 .project-item ul li {
     margin: 5px 0;
 }
 
-/* Contact Form Section */
-.form-section {
-    text-align: center;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.form-input {
-}
-
-.project-item p {
-    font-size: 1em;
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.project-item ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    font-size: 0.9em;
-    color: #555;
-}
-
-.project-item ul li {
-    margin: 5px 0;
-}
 /* Contact Section */
 #contact {
-    padding: 60px 30px; /* Adjusted padding for better balance */
+    padding: 60px 30px;
 }
 
-/* Form Styling */
 #contact form {
     width: 100%;
-    max-width: 600px; /* Constrained form width */
-    margin: 0 auto; /* Center align form */
+    max-width: 600px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -280,7 +238,6 @@ video {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Input and Textarea Styling */
 #contact input, #contact textarea {
     width: 100%;
     padding: 10px;
@@ -290,25 +247,8 @@ video {
     color: #000080;
     font-size: 16px;
     resize: vertical;
-    margin: 5px 0; /* Added margin for spacing between fields */
+    margin: 5px 0;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #contact {
-        padding: 40px 15px; /* Adjust padding for smaller screens */
-    }
-
-    #contact form {
-        max-width: 100%; /* Make form width 100% on mobile */
-        padding: 10px;
-    }
-
-    .contact-panel {
-        max-width: 100%; /* Full width for the contact panel on mobile */
-    }
-}
-
 
 /* Footer */
 footer p {
@@ -319,6 +259,12 @@ footer p {
 footer p a {
     font-size: 24px;
     margin: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #0efd1a;
 }
 
 /* Responsive Design */
@@ -327,13 +273,15 @@ footer p a {
         flex-direction: column;
     }
 
-    #work .work-grid {
+    .container, #contact form {
+        width: 90%;
+    }
+
+    .projects-grid {
         grid-template-columns: 1fr;
     }
 
-    /* Adjust the container in the home section */
     #home .container {
         max-width: 80%;
     }
 }
-
