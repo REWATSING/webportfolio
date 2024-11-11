@@ -76,12 +76,12 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 /* Home Section */
 #home .container {
-    max-width: 600px;
+    max-width: 1000px;
 }
 
 /* Global Button Style */
@@ -170,11 +170,11 @@ video {
 
 /* Projects Section */
 #work {
-    padding: 50px 0;
+    padding: 50px 5px;
 }
 
 #work h2 {
-    text-align: center;
+    text-align: left;
     font-size: 2.5em;
     margin-bottom: 30px;
 }
@@ -218,24 +218,41 @@ video {
     margin: 5px 0;
 }
 
+
 /* Contact Section */
 #contact {
-    padding: 60px 30px;
+    padding: 60px 10px;
 }
 
+/* Container within contact section */
+#contact .container {
+    width: 100%;  /* Make container span the full width of the section */
+    padding: 0 20px; /* Add some space on the left and right */
+}
+
+/* Contact Form */
 #contact form {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 15px;
-    margin-top: 20px;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: flex-start; /* Align form content to the left */
+}
+
+/* Align h2 text and form elements to the left */
+#contact h2 {
+    text-align: left; /* Align heading text to the left */
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    text-align: left; /* Align paragraph text to the left */
+    margin-bottom: 20px;
 }
 
 #contact input, #contact textarea {
@@ -248,6 +265,7 @@ video {
     font-size: 16px;
     resize: vertical;
     margin: 5px 0;
+    text-align: left; /* Align input/textarea text to the left */
 }
 
 /* Footer */
