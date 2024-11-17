@@ -10,7 +10,7 @@ body {
     background-color: #dff2f7;
     color: #333;
     line-height: 1.6;
-    padding-top: 80px; /* Reduced padding for fixed header */
+    padding-top: 80px; /* Initial padding for fixed header */
 }
 
 /* Container Alignment */
