@@ -29,3 +29,20 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     alert("Thank you for your message, " + name + "! We will get back to you soon.");
     document.getElementById("contact-form").reset(); // Reset the form fields
 });
+
+
+
+
+// JavaScript for adjusting padding-top based on header size
+window.addEventListener("load", function () {
+    // Get the height of the fixed header
+    const headerHeight = document.querySelector("header").offsetHeight;
+
+    // Set padding-top for the body dynamically to prevent content from being hidden under the fixed header
+    document.body.style.paddingTop = `${headerHeight}px`;
+
+    // Adjust padding on window resize for dynamic changes
+    window.addEventListener("resize", function () {
+        document.body.style.paddingTop = `${document.querySelector("header").offsetHeight}px`;
+    });
+});
