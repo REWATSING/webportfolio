@@ -10,7 +10,7 @@ body {
     background-color: #dff2f7;
     color: #333;
     line-height: 1.6;
-    padding-top: 120px; /* Space for fixed header */
+    padding-top: 80px; /* Reduced padding for fixed header */
 }
 
 /* Container Alignment */
@@ -23,7 +23,7 @@ body {
 /* Header and Footer */
 header, footer {
     background-color: #A8E6CF;
-    padding: 15px 25px;
+    padding: 10px 20px; /* Reduced padding to fix mobile size */
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -72,7 +72,7 @@ header nav ul li a:hover {
 
 /* Sections */
 section {
-    padding: 100px 20px; /* Increased padding for better spacing */
+    padding: 80px 20px; /* Adjusted padding for mobile-friendly spacing */
     margin-bottom: 60px; /* Space between sections */
     min-height: 100vh;
     display: flex;
@@ -88,10 +88,24 @@ section h2 {
     text-align: left;
 }
 
-/* Fix for header overlap on mobile screens */
+/* Fix for header overlap issue */
 @media (max-width: 768px) {
-    section h2 {
-        margin-top: 60px; /* Additional space for mobile header overlap */
+    body {
+        padding-top: 70px; /* Reduced space for fixed header */
+    }
+
+    section {
+        padding: 90px 20px 20px; /* Add extra top padding for mobile */
+    }
+
+    header {
+        padding: 8px 15px; /* Reduce header padding for mobile */
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 70px; /* Space for mobile nav dropdown */
     }
 }
 
@@ -255,24 +269,4 @@ footer p a {
 
 footer p a:hover {
     color: #0efd1a;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        padding-top: 100px;
-    }
-
-    .container, #contact form {
-        width: 90%;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    #home .container {
-        max-width: 80%;
-    }
 }
