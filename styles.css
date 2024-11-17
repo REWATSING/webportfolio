@@ -20,28 +20,25 @@ body {
     padding: 0 15px; /* Adding padding for consistent horizontal spacing */
 }
 
-/* Header and Footer */
-header, footer {
-    background-color: #A8E6CF;
-    padding: 10px 20px; /* Reduced padding to fix mobile size */
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
+/* Header Styles */
 header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    background-color: #A8E6CF;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-footer {
-    text-align: center;
-    margin-top: 40px; /* Increased margin to separate from content */
+/* Hide Header on Scroll */
+header.hidden {
+    top: -80px;
 }
 
 /* Logo in Header */
@@ -55,7 +52,7 @@ header nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* Ensures wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 header nav a {
@@ -70,48 +67,52 @@ header nav ul li a:hover {
     color: #0efd1a; /* Darker green on hover */
 }
 
-/* Sections */
+/* Footer Styles */
+footer {
+    background-color: #A8E6CF;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 40px; /* Increased margin to separate from content */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer p a {
+    font-size: 24px;
+    margin: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #0efd1a;
+}
+
+/* Section Styles */
 section {
-    padding: 80px 20px; /* Adjusted padding for mobile-friendly spacing */
-    margin-bottom: 60px; /* Space between sections */
+    padding: 80px 20px;
+    margin-bottom: 60px;
     min-height: 100vh;
     display: flex;
     align-items: center;
     text-align: left;
-    border-bottom: 2px solid #A8E6CF; /* Subtle bottom border */
+    border-bottom: 2px solid #A8E6CF;
 }
 
-/* Headings */
 section h2 {
     font-size: 2em;
-    margin-bottom: 30px; /* Space below heading */
+    margin-bottom: 30px;
     text-align: left;
-}
-
-/* Fix for header overlap issue */
-@media (max-width: 768px) {
-    body {
-        padding-top: 70px; /* Reduced space for fixed header */
-    }
-
-    section {
-        padding: 90px 20px 20px; /* Add extra top padding for mobile */
-    }
-
-    header {
-        padding: 8px 15px; /* Reduce header padding for mobile */
-    }
-
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-        padding-top: 70px; /* Space for mobile nav dropdown */
-    }
 }
 
 /* Home Section */
 #home {
-    margin-top: 20px; /* Additional space to separate from the header */
+    margin-top: 20px;
 }
 
 #home .intro h1 {
@@ -132,7 +133,7 @@ section h2 {
     margin-bottom: 20px;
 }
 
-/* Buttons */
+/* Button Styles */
 .button-style {
     background-color: #FF8C94;
     color: #333333;
@@ -151,11 +152,11 @@ section h2 {
     border-color: #0efd1a;
     transform: scale(1.05);
     outline: none;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced hover effect */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .button-style:focus {
-    box-shadow: 0 0 0 3px rgba(255, 140, 148, 0.4); /* Focus shadow */
+    box-shadow: 0 0 0 3px rgba(255, 140, 148, 0.4);
 }
 
 /* Video Frame */
@@ -229,7 +230,7 @@ video {
 
 /* Contact Section */
 #contact .container {
-    width: 100%; /* Make container span the full width of the section */
+    width: 100%;
     padding: 0 15px;
 }
 
@@ -254,19 +255,23 @@ video {
     resize: vertical;
 }
 
-/* Footer */
-footer p {
-    font-size: 16px;
-    font-weight: 500;
-}
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px; /* Reduced space for fixed header */
+    }
 
-footer p a {
-    font-size: 24px;
-    margin: 10px;
-    color: #333;
-    text-decoration: none;
-}
+    section {
+        padding: 90px 20px 20px;
+    }
 
-footer p a:hover {
-    color: #0efd1a;
+    header {
+        padding: 8px 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 70px;
+    }
 }
