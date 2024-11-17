@@ -86,7 +86,13 @@ section h2 {
     font-size: 2em;
     margin-bottom: 30px; /* Space below heading */
     text-align: left;
-    margin-top: 6rem;
+}
+
+/* Fix for header overlap on mobile screens */
+@media (max-width: 768px) {
+    section h2 {
+        margin-top: 60px; /* Additional space for mobile header overlap */
+    }
 }
 
 /* Home Section */
@@ -258,10 +264,6 @@ footer p a:hover {
         padding-top: 100px;
     }
 
-    h2 {
-        margin-top: 2rem; /* Normal spacing for larger screens */
-      }
-
     .container, #contact form {
         width: 90%;
     }
@@ -274,4 +276,3 @@ footer p a:hover {
         max-width: 80%;
     }
 }
-
