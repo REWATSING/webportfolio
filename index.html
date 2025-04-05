@@ -5,13 +5,14 @@
     <!-- Meta tags for encoding, viewport, and SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rewat Singh's portfolio showcasing projects, experience, and contact information.">
+    <meta name="description"
+        content="Rewat Singh's portfolio showcasing projects, experience, and contact information.">
     <meta name="keywords" content="portfolio, web developer, projects, contact">
-    
+
     <title>My Portfolio</title>
 
     <!-- Link to custom CSS file -->
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css">
 
     <!-- Font Awesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -20,12 +21,13 @@
 <body>
     <!-- Header with logo and navigation -->
     <header>
-        <div class="logo"> 
+        <div class="logo">
             <a href="#home">
-                <img src="images/logo2.png" alt="Logo of Rewat Singh - DevOps and Cloud Engineer" width="150" height="auto">
-            </a> 
+                <img src="images/logo2.png" alt="Logo of Rewat Singh - DevOps and Cloud Engineer" width="150"
+                    height="auto">
+            </a>
         </div>
-        
+
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -35,7 +37,7 @@
         </nav>
     </header>
 
-    
+
     <!-- Home Section -->
     <section id="home">
         <div class="container">
@@ -44,26 +46,39 @@
                 <h2>Hey, my name is</h2>
                 <h1>Rewat Singh</h1>
                 <p>
-                    I'm a design-minded software developer based in India💚 who likes building dark and accessible websites.
-                    Long-term, I aim to become a full-stack developer. I worked as a Graphic Designer for about 2 years before
+                    I'm a design-minded software developer based in India💚 who likes building dark and accessible
+                    websites.
+                    Long-term, I aim to become a full-stack developer. I worked as a Graphic Designer for about 2 years
+                    before
                     starting my journey into tech.
                 </p>
                 <button class="button-style" aria-label="Learn more about me">Learn More</button>
             </div>
         </div>
     </section>
-  
+
 
     <!-- About Section -->
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I'm Rewat Singh, a DevOps, SRE, and Cloud Engineer with over three years of experience in optimizing infrastructure and streamlining automation for scalable, efficient systems. My expertise covers infrastructure provisioning, automation, and monitoring, with a focus on tools like Jenkins, Terraform, and Ansible. Skilled in managing AWS and Azure cloud services, I maintain high availability for containerized applications using Kubernetes and have implemented monitoring and observability through ELK, Grafana, and Datadog to ensure comprehensive system insights. Leveraging GitOps, I manage infrastructure as code to maintain control and visibility across deployments.</p>
+            <p>I'm Rewat Singh, a DevOps, SRE, and Cloud Engineer with over three years of experience in optimizing
+                infrastructure and streamlining automation for scalable, efficient systems. My expertise covers
+                infrastructure provisioning, automation, and monitoring, with a focus on tools like Jenkins, Terraform,
+                and Ansible. Skilled in managing AWS and Azure cloud services, I maintain high availability for
+                containerized applications using Kubernetes and have implemented monitoring and observability through
+                ELK, Grafana, and Datadog to ensure comprehensive system insights. Leveraging GitOps, I manage
+                infrastructure as code to maintain control and visibility across deployments.</p>
 
-            <p>Currently, I am a Tech Support Engineer at Q3 Technologies, where I work closely with project managers, developers, and IT teams to deliver high-quality solutions that support business goals. My six years in tech include roles in infrastructure support on AWS, Linux, and Windows, Build & Release Management, and work in network engineering and penetration testing.</p>
-                
-            <p>I hold a Bachelor’s degree in Electronics and Communication Engineering and am always seeking opportunities to tackle new challenges in DevOps and cloud engineering. For a downloadable resume, please click the link above.</p>
-            
+            <p>Currently, I am a Tech Support Engineer at Q3 Technologies, where I work closely with project managers,
+                developers, and IT teams to deliver high-quality solutions that support business goals. My six years in
+                tech include roles in infrastructure support on AWS, Linux, and Windows, Build & Release Management, and
+                work in network engineering and penetration testing.</p>
+
+            <p>I hold a Bachelor’s degree in Electronics and Communication Engineering and am always seeking
+                opportunities to tackle new challenges in DevOps and cloud engineering. For a downloadable resume,
+                please click the link above.</p>
+
             <!-- Download Resume Button -->
             <a href="resume.pdf" class="button-style">Download Resume</a>
 
@@ -78,13 +93,13 @@
             </div>
         </div>
     </section>
-  
+
     <!-- Work Section -->
     <section id="work">
         <div class="container">
             <h2>My Projects</h2>
             <p>Here are some of the key projects I've worked on in DevOps and Cloud Engineering.</p><br>
-            
+
             <!-- Projects Grid -->
             <div class="projects-grid">
                 <!-- Project 1 -->
@@ -96,20 +111,30 @@
                         <li>Technologies: Jenkins, Docker, Kubernetes</li>
                         <li>Role: DevOps Engineer</li>
                     </ul>
-                    <a href="https://github.com/yourproject1" target="_blank" class="button-style" rel="noopener">View Project</a>
+                    <a href="https://github.com/yourproject1" target="_blank" class="button-style" rel="noopener">View
+                        Project</a>
                 </div>
 
                 <!-- Project 2 -->
                 <div class="project-item">
-                    <img src="images/project2.jpg" alt="Infrastructure as Code with Terraform and AWS">
-                    <h3>Infrastructure as Code with Terraform</h3>
-                    <p>Provisioned cloud resources on AWS using Terraform for infrastructure as code.</p>
+                    <img src="images/infra-scale-calc-banner.jpg"
+                        alt="Infra-Scale-Servlet-Calculator with Packer, Terraform, and AWS">
+                    <h3>Infra-Scale-Servlet-Calculator</h3>
+                    <p>
+                        A fully automated DevOps pipeline deploying a scalable Java Servlet app using Packer, Terraform,
+                        and GitHub Actions —
+                        featuring blue-green deployment, custom AMIs, and end-to-end AWS infrastructure provisioning.
+                    </p>
                     <ul>
-                        <li>Technologies: Terraform, AWS</li>
-                        <li>Role: Cloud Engineer</li>
+                        <li>Technologies: Packer, Terraform, AWS, GitHub Actions</li>
+                        <li>Role: DevOps Engineer</li>
                     </ul>
-                    <a href="https://github.com/yourproject2" target="_blank" class="button-style" rel="noopener">View Project</a>
+                    <a href="https://github.com/REWATSING/Infra-Scale-Servlet-Calculator" target="_blank"
+                        class="button-style" rel="noopener">
+                        View Project
+                    </a>
                 </div>
+
 
                 <!-- Project 3 -->
                 <div class="project-item">
@@ -120,7 +145,8 @@
                         <li>Technologies: Kubernetes, Prometheus, Grafana</li>
                         <li>Role: SRE</li>
                     </ul>
-                    <a href="https://github.com/yourproject3" target="_blank" class="button-style" rel="noopener">View Project</a>
+                    <a href="https://github.com/yourproject3" target="_blank" class="button-style" rel="noopener">View
+                        Project</a>
                 </div>
 
                 <!-- Project 4 -->
@@ -132,7 +158,8 @@
                         <li>Technologies: Ansible</li>
                         <li>Role: DevOps Engineer</li>
                     </ul>
-                    <a href="https://github.com/yourproject4" target="_blank" class="button-style" rel="noopener">View Project</a>
+                    <a href="https://github.com/yourproject4" target="_blank" class="button-style" rel="noopener">View
+                        Project</a>
                 </div>
 
                 <!-- Project 5 -->
@@ -144,7 +171,8 @@
                         <li>Technologies: ArgoCD, Kubernetes</li>
                         <li>Role: DevOps Engineer</li>
                     </ul>
-                    <a href="https://github.com/yourproject5" target="_blank" class="button-style" rel="noopener">View Project</a>
+                    <a href="https://github.com/yourproject5" target="_blank" class="button-style" rel="noopener">View
+                        Project</a>
                 </div>
 
                 <!-- Project 6 -->
@@ -156,7 +184,8 @@
                         <li>Technologies: AWS Lambda, API Gateway</li>
                         <li>Role: Cloud Engineer</li>
                     </ul>
-                    <a href="https://github.com/yourproject6" target="_blank" class="button-style" rel="noopener">View Project</a>
+                    <a href="https://github.com/yourproject6" target="_blank" class="button-style" rel="noopener">View
+                        Project</a>
                 </div>
 
                 <!-- Project 7 -->
@@ -168,7 +197,8 @@
                         <li>Technologies: Prometheus, Grafana, PagerDuty</li>
                         <li>Role: SRE</li>
                     </ul>
-                    <a href="https://github.com/yourproject7" target="_blank" class="button-style" rel="noopener">View Project</a>
+                    <a href="https://github.com/yourproject7" target="_blank" class="button-style" rel="noopener">View
+                        Project</a>
                 </div>
 
                 <!-- Project 8 -->
@@ -180,19 +210,20 @@
                         <li>Technologies: JMeter, Kubernetes</li>
                         <li>Role: Performance Engineer</li>
                     </ul>
-                    <a href="https://github.com/yourproject8" target="_blank" class="button-style" rel="noopener">View Project</a>
+                    <a href="https://github.com/yourproject8" target="_blank" class="button-style" rel="noopener">View
+                        Project</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <h2>Send me a message</h2>
             <p>Feel free to reach out to me via email or social media platforms.</p>
-            
+
             <!-- Contact Form -->
             <form action="https://formspree.io/f/mldedglv" method="POST" class="contact-form">
                 <input type="text" name="name" placeholder="Your Name" required class="form-input">
@@ -201,20 +232,24 @@
                 <button type="submit" class="button-style">Send Message</button>
             </form>
         </div>
-</section>
+    </section>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 | Designed & Developed with passion by Rewat Singh</p>
         <p>
-            <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a> | 
-            <a href="https://github.com/yourprofile" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a> | 
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener" aria-label="Twitter"><i
+                    class="fab fa-twitter"></i></a> |
+            <a href="https://github.com/yourprofile" target="_blank" rel="noopener" aria-label="GitHub"><i
+                    class="fab fa-github"></i></a> |
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                    class="fab fa-linkedin"></i></a>
         </p>
     </footer>
 
-   
+
     <!-- JavaScript File Link -->
     <script src="script.js"></script>
 </body>
+
 </html>
