@@ -30,9 +30,6 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     document.getElementById("contact-form").reset(); // Reset the form fields
 });
 
-
-
-
 // JavaScript for adjusting padding-top based on header size
 window.addEventListener("load", function () {
     // Get the height of the fixed header
